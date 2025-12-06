@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Metaetiquetas para compartir en redes sociales (WhatsApp, etc.) -->
+    <title>Una pregunta importante...</title>
+    <meta property="og:title" content="Tengo algo que decirte 💌" />
+    <meta property="og:description" content="He preparado esto para ti. Por favor, léelo." />
+    <meta property="og:type" content="website" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        background-color: #fce7f3; /* pink-100 */
+      }
+      /* Smooth transitions for the moving button */
+      .moving-btn {
+        transition: all 0.2s ease-out;
+      }
+      
+      /* Animaciones simples */
+      @keyframes scale-in {
+        0% { transform: scale(0.9); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .animate-scale-in {
+        animation: scale-in 0.3s ease-out forwards;
+      }
+      
+      @keyframes fade-in-up {
+        0% { transform: translateY(20px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.5s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
